@@ -1,0 +1,19 @@
+{
+  "name": "BookHaven",
+  "version": "1.0.0",
+  "description": "A simple website",
+  "main": "index.html",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "author": "Pruthvi S",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Prureddy/BookHaven.git"
+  },
+  "keywords": ["node"]
+}
