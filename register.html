@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register - BookHaven</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/custom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li><i class="fab fa-opencart"></i> Off 10%! On first Order</li>
+                                <li><i class="fab fa-opencart"></i> 20% off Use Promo code: offT20</li>
+                                <li><i class="fab fa-opencart"></i> Off 30% off Refer a friend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control">
+                            <option>ZAR</option>
+                        </select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#">+27-123-456-789</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="static/images/logo.jpg" width="120" height="70" alt="BookHaven"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Login</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="checkout.html">Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+                            <a href="cart.html">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span class="badge">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Register Form -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Register</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Register</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 mx-auto">
+                    <div class="login-box">
+                        <div class="login-form">
+                            <h3>Create Your Account</h3>
+                            <div id="register-message" class="alert" style="display: none;"></div>
+                            <form id="register-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="firstName">First Name</label>
+                                        <input type="text" id="firstName" class="form-control" placeholder="Enter your first name" required>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="lastName">Last Name</label>
+                                        <input type="text" id="lastName" class="form-control" placeholder="Enter your last name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="regEmail">Email Address</label>
+                                    <input type="email" id="regEmail" class="form-control" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="regPassword">Password</label>
+                                    <input type="password" id="regPassword" class="form-control" placeholder="Create a password" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="terms" required>
+                                        <label class="form-check-label" for="terms">
+                                            I agree to the <a href="#" onclick="showTerms()">Terms & Conditions</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account? <a href="checkout.html" onclick="showLoginForm()">Login here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Register Form -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About BookHaven</h4>
+                            <p>Your online destination for books of all genres. Discover bestsellers, classics, and hidden gems.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><p><i class="fas fa-phone-square"></i> Phone: +27-123-456-789</p></li>
+                                <li><p><i class="fas fa-envelope"></i> Email: info@bookhaven.co.za</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">BookHaven</a></p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/app.js"></script>
+    <script>
+        // Register form functionality
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('regEmail').value;
+            const password = document.getElementById('regPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+            const messageDiv = document.getElementById('register-message');
+            
+            // Validation
+            if (password !== confirmPassword) {
+                messageDiv.className = 'alert alert-danger';
+                messageDiv.textContent = 'Passwords do not match!';
+                messageDiv.style.display = 'block';
+                return;
+            }
+            
+            if (!terms) {
+                messageDiv.className = 'alert alert-danger';
+                messageDiv.textContent = 'Please accept the Terms & Conditions!';
+                messageDiv.style.display = 'block';
+                return;
+            }
+            
+            // Check if user already exists (demo logic)
+            const existingUsers = JSON.parse(localStorage.getItem('bh_users') || '[]');
+            const userExists = existingUsers.some(user => user.email === email);
+            
+            if (userExists) {
+                messageDiv.className = 'alert alert-danger';
+                messageDiv.textContent = 'Email already registered!';
+                messageDiv.style.display = 'block';
+                return;
+            }
+            
+            // Create new user
+            const newUser = {
+                id: Date.now(),
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                password: password, // In real app, this would be hashed
+                role: 'customer',
+                createdAt: new Date().toISOString()
+            };
+            
+            existingUsers.push(newUser);
+            localStorage.setItem('bh_users', JSON.stringify(existingUsers));
+            
+            // Auto login
+            const user = {
+                email: email,
+                role: 'customer',
+                name: `${firstName} ${lastName}`
+            };
+            localStorage.setItem('bh_user', JSON.stringify(user));
+            
+            messageDiv.className = 'alert alert-success';
+            messageDiv.textContent = 'Account created successfully! Redirecting...';
+            messageDiv.style.display = 'block';
+            
+            setTimeout(() => {
+                window.location.href = 'my-account.html';
+            }, 1500);
+        });
+
+        function showTerms() {
+            alert('Terms & Conditions: By using BookHaven, you agree to our terms of service. (UI demo only)');
+        }
+
+        function showLoginForm() {
+            // This would normally switch to login tab/form
+            window.location.href = 'checkout.html';
+        }
+    </script>
+</body>
+</html>

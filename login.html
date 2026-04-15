@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login - BookHaven</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/custom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li><i class="fab fa-opencart"></i> Off 10%! On first Order</li>
+                                <li><i class="fab fa-opencart"></i> 20% off Use Promo code: offT20</li>
+                                <li><i class="fab fa-opencart"></i> Off 30% off Refer a friend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="custom-select-box">
+                        <select id="basic" class="selectpicker show-tick form-control">
+                            <option>ZAR</option>
+                        </select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>Call US :- <a href="#">+27-123-456-789</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Header -->
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="static/images/logo.jpg" width="120" height="70" alt="BookHaven"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="checkout.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="checkout.html">Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu">
+                            <a href="cart.html">
+                                <i class="fa fa-shopping-bag"></i>
+                                <span class="badge">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Login Form -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Login</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="login-box">
+                        <div class="login-form">
+                            <h3>Login to Your Account</h3>
+                            <div id="login-message" class="alert" style="display: none;"></div>
+                            <form id="login-form">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="remember">
+                                        <label class="form-check-label" for="remember">Remember me</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Don't have an account? <a href="checkout.html" onclick="showRegisterForm()">Register here</a></p>
+                                <p><a href="#" onclick="showForgotPassword()">Forgot Password?</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="login-box">
+                        <div class="login-form">
+                            <h3>Demo Accounts</h3>
+                            <div class="demo-accounts">
+                                <div class="demo-account">
+                                    <h5>Customer Account</h5>
+                                    <p><strong>Email:</strong> customer@bookhaven.co.za</p>
+                                    <p><strong>Password:</strong> customer123</p>
+                                    <button class="btn btn-outline-primary btn-sm" onclick="fillDemoLogin('customer@bookhaven.co.za', 'customer123')">Use Demo</button>
+                                </div>
+                                <div class="demo-account mt-3">
+                                    <h5>Admin Account</h5>
+                                    <p><strong>Email:</strong> admin@bookhaven.co.za</p>
+                                    <p><strong>Password:</strong> admin123</p>
+                                    <button class="btn btn-outline-primary btn-sm" onclick="fillDemoLogin('admin@bookhaven.co.za', 'admin123')">Use Demo</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Login Form -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About BookHaven</h4>
+                            <p>Your online destination for books of all genres. Discover bestsellers, classics, and hidden gems.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><p><i class="fas fa-phone-square"></i> Phone: +27-123-456-789</p></li>
+                                <li><p><i class="fas fa-envelope"></i> Email: info@bookhaven.co.za</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">BookHaven</a></p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/custom.js"></script>
+    <script src="static/js/app.js"></script>
+    <script>
+        // Login form functionality
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('login-message');
+            
+            // Demo login logic
+            if ((email === 'customer@bookhaven.co.za' && password === 'customer123') ||
+                (email === 'admin@bookhaven.co.za' && password === 'admin123')) {
+                
+                messageDiv.className = 'alert alert-success';
+                messageDiv.textContent = 'Login successful! Redirecting...';
+                messageDiv.style.display = 'block';
+                
+                // Store user in localStorage
+                const user = {
+                    email: email,
+                    role: email.includes('admin') ? 'admin' : 'customer',
+                    name: email.includes('admin') ? 'Admin User' : 'Customer User'
+                };
+                localStorage.setItem('bh_user', JSON.stringify(user));
+                
+                setTimeout(() => {
+                    if (user.role === 'admin') {
+                        window.location.href = 'admin.html';
+                    } else {
+                        window.location.href = 'my-account.html';
+                    }
+                }, 1500);
+            } else {
+                messageDiv.className = 'alert alert-danger';
+                messageDiv.textContent = 'Invalid email or password. Try the demo accounts!';
+                messageDiv.style.display = 'block';
+            }
+        });
+
+        function fillDemoLogin(email, password) {
+            document.getElementById('email').value = email;
+            document.getElementById('password').value = password;
+        }
+
+        function showForgotPassword() {
+            alert('Forgot password functionality would reset user password (UI demo only)');
+        }
+    </script>
+</body>
+</html>
