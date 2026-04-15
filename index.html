@@ -8,28 +8,14 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/bootsnav.css">
-    <link rel="stylesheet" href="static/css/bootstrap-select.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-    <!-- jQuery UI -->
-    <link rel="stylesheet" href="static/css/jquery-ui.css">
-    <!-- Carousel Ticker -->
-    <link rel="stylesheet" href="static/css/carousel-ticker.css">
-    <!-- Superslides -->
-    <link rel="stylesheet" href="static/css/superslides.css">
-    <!-- Animated CSS -->
-    <link rel="stylesheet" href="static/css/code_animate.css">
-    <!-- Baguette Box -->
-    <link rel="stylesheet" href="static/css/baguetteBox.min.css">
-    <!-- Main CSS -->
+    <!-- Site CSS -->
     <link rel="stylesheet" href="static/css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="static/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/custom.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Start Main Top -->
@@ -49,7 +35,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="custom-select-box">
-                        <select class="selectpicker form-control">
+                        <select id="basic" class="selectpicker show-tick form-control">
                             <option>ZAR</option>
                         </select>
                     </div>
@@ -70,11 +56,15 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="static/images/logo.jpg" width="120" height="70" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="static/images/logo.jpg" width="120" height="70" alt="BookHaven"></a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="checkout.html">Login</a></li>
                         <li class="nav-item"><a class="nav-link" href="checkout.html">Register</a></li>
                     </ul>
@@ -106,7 +96,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Welcome To <br> BookHaven</strong></h1>
                             <p class="m-b-40">Discover amazing books for every reader</p>
-                            <p><a class="btn hvr-hover" href="#">Shop Now</a></p>
+                            <p><a class="btn hvr-hover" href="shop.html">Shop Now</a></p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +108,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Welcome To <br> BookHaven</strong></h1>
                             <p class="m-b-40">Find your next favorite read</p>
-                            <p><a class="btn hvr-hover" href="#">Shop Now</a></p>
+                            <p><a class="btn hvr-hover" href="shop.html">Shop Now</a></p>
                         </div>
                     </div>
                 </div>
@@ -131,6 +121,33 @@
     </div>
     <!-- End Slider -->
 
+    <!-- Start Categories -->
+    <div class="categories-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="static/images/action and advencture.jpg" alt="Adventure">
+                        <a class="btn hvr-hover" href="shop.html">Adventure</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="static/images/Biography.jpg" alt="Biography">
+                        <a class="btn hvr-hover" href="shop.html">Biography</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="shop-cat-box">
+                        <img class="img-fluid" src="static/images/Historical_fiction.jpg" alt="History">
+                        <a class="btn hvr-hover" href="shop.html">History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+
     <!-- Start Products -->
     <div class="products-box">
         <div class="container">
@@ -138,7 +155,7 @@
                 <div class="col-lg-12">
                     <div class="title-all text-center">
                         <h1>Featured Products</h1>
-                        <p>Browse our finest selection of books</p>
+                        <p>Browse our collection of bestselling books</p>
                     </div>
                 </div>
             </div>
@@ -153,9 +170,9 @@
                             <img src="static/images/Zero-To-One-by-Peter-Thiel-400x600.jpg" class="img-fluid" alt="Zero to One">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a href="#" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart" href="#">Add to Cart</a>
                             </div>
@@ -176,9 +193,9 @@
                             <img src="static/images/Alchemist.png" class="img-fluid" alt="The Alchemist">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a href="#" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart" href="#">Add to Cart</a>
                             </div>
@@ -199,9 +216,9 @@
                             <img src="static/images/The_Intelligent_invester.jpg" class="img-fluid" alt="The Intelligent Investor">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a href="#" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart" href="#">Add to Cart</a>
                             </div>
@@ -222,9 +239,9 @@
                             <img src="static/images/sherlock.jpg" class="img-fluid" alt="Sherlock Holmes">
                             <div class="mask-icon">
                                 <ul>
-                                    <li><a href="#" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" title="View"><i class="fas fa-eye"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
+                                    <li><a href="#" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart" href="#">Add to Cart</a>
                             </div>
@@ -245,28 +262,36 @@
         <div class="footer-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-widget">
                             <h4>About BookHaven</h4>
                             <p>Your online destination for books of all genres. Discover bestsellers, classics, and hidden gems.</p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link">
                             <h4>Quick Links</h4>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="shop.html">Shop</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="about.html">About</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <div class="footer-link-contact">
                             <h4>Contact Us</h4>
                             <ul>
-                                <li><p><i class="fas fa-phone-square"></i> Phone: +27-123-456-789</p></li>
-                                <li><p><i class="fas fa-envelope"></i> Email: bookhaven@example.com</p></li>
+                                <li><p><i class="fas fa-map-marker-alt"></i> Address: Johannesburg, SA</p></li>
+                                <li><p><i class="fas fa-phone-square"></i> Phone: <a href="tel:+27123456789">+27-123-456-789</a></p></li>
+                                <li><p><i class="fas fa-envelope"></i> Email: <a href="mailto:info@bookhaven.co.za">info@bookhaven.co.za</a></p></li>
                             </ul>
                         </div>
                     </div>
@@ -277,7 +302,7 @@
     <!-- End Footer -->
 
     <div class="footer-copyright">
-        <p>All Rights Reserved. &copy; 2024 <a href="#">BookHaven</a></p>
+        <p class="footer-company">All Rights Reserved. &copy; 2024 <a href="#">BookHaven</a></p>
     </div>
 
     <a href="#" id="back-to-top" style="display: none;">&uarr;</a>
@@ -295,7 +320,5 @@
     <script src="static/js/owl.carousel.min.js"></script>
     <script src="static/js/baguetteBox.min.js"></script>
     <script src="static/js/custom.js"></script>
-    <script src="static/js/app.js"></script>
-
 </body>
 </html>
